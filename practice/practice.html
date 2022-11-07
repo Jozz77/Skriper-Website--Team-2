@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="deco.css" />
+    <title>psedo classes</title>
+  </head>
+
+  <body>
+        <!-- HTML FOR SIDE BARS -->
+    <div class="intro">
+  
+      <h1>a sample hello world web page</h1>
+    </div>
+
+   
+<div class="dent"></div>
+<div class="id"></div>
+
+<!-- HTML FOR HOVER EFFECT -->
+    <div class="parent">
+      <div class="card">
+        <img src="../Zuri Website Clone/IMG/lady1-removebg-preview.png" alt="donut poster" class="card-image" />
+        <div class="card-text">
+          <h3>card title</h3>
+          <p>Lorem ipsum dolor.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../Zuri Website Clone/IMG/male1-removebg-preview.png" alt="donut poster" class="card-image" />
+        <div class="card-text">
+          <h3>card title</h3>
+          <p>Lorem ipsum dolor.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- HTML FOR COUNTER -->
+    <p class="p">Lorem, ipsum dolor.</p>
+
+    <div class="counter">
+      <p class="list">Lorem ipsum dolor sit amet.</p>
+      <p class="list">Lorem ipsum dolor sit amet.</p>
+      <p class="list">Lorem ipsum dolor sit amet.</p>
+      <p class="list">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+<!-- HTML FOR POP UP LINK -->
+    <p class="link">
+      Lorem ipsum dolor sit <a href="#">Lorem</a> Lorem ipsum dolor sit amet.
+    </p>
+
+    <div class="bordered_triangle"> 
+      select
+    </div>
+    <div class="skew"></div>
+    <div class="skew_bottom"></div>
+
+    <style>
+      /* CSS FOR SIDE BAR */
+      h1 {
+        text-transform: uppercase;
+        font-size: 2em;
+        color: orangered;
+        font-weight: 900;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        line-height: 0.9;
+        margin-top: 100px;
+      }
+      .intro {
+        text-align: center;
+      }
+      h1::before,
+      h1::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        display: block;
+      }
+      h1::before {
+        background-color: orangered;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -2;
+      }
+      h1::after {
+        background-color: bisque;
+        height: 100%;
+        z-index: -1;
+        left: -0.5em;
+        right: -0.5em;
+      }
+
+
+      /* CSS FOR POP UP LINK */
+      .link {
+        margin: 1em;
+        font-size: 1em;
+        padding: 5em;
+      }
+      a {
+        position: relative;
+      }
+      a::after {
+        content: "sup bitches";
+        display: block;
+        position: absolute;
+
+        white-space: nowrap;
+        background-color: grey;
+        padding: 1em 2em;
+        color: white;
+        border-radius: 5px;
+        bottom: 0;
+        left: 0;
+        transform: scale(0);
+        transition: transform ease-out 150ms, bottom ease-out 150ms;
+      }
+      a:hover::after {
+        transform: scale(1);
+        bottom: 100%;
+      }
+
+      /* CSS FOR COUNTER */
+      .counter {
+        background-color: grey;
+        width: 100%;
+        height: 100%;
+        padding: 5em;
+        margin-top: 3em;
+        counter-reset: list-counter;
+      }
+      .list {
+        margin-top: 2em;
+        position: relative;
+      }
+      .list::before {
+        counter-increment: list-counter;
+        content: counter(list-counter);
+        position: absolute;
+        left: -2em;
+        background-color: white;
+        width: 1.5em;
+        height: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border-radius: 50%;
+        color: black;
+        border: 1px solid black;
+        top: -0.2em;
+      }
+    </style>
+  
+  </body>
+</html>

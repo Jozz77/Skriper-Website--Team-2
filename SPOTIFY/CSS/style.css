@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-weight: bold;
+}
+/* style for nav bar */
+.topheader {
+  background-color: black;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  
+}
+.spotifylogo {
+  width: 150px;
+  margin: 10px 30px;
+}
+
+.navleft ul li {
+  list-style-type: none;
+  font-size: 15px;
+  margin: 20px 25px;
+  float: left;
+  color: white;
+ 
+}
+.navleft{
+  animation: slideIn 750ms linear forwards;
+}
+
+.topheader a {
+  text-decoration: none;
+  color: white;
+  font-family: "poppins";
+}
+a:hover {
+  color: rgb(30, 215, 96);
+}
+
+@keyframes slideIn{
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* style for footer */
+footer {
+  background-color: black;
+
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+.footdiv {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+footer ul li {
+  list-style-type: none;
+  padding-bottom: 25px;
+  line-height: 1.4;
+}
+footer .box1,
+footer .box2,
+footer .box3 {
+  margin: 50px;
+}
+.box0 {
+  margin: 30px;
+}
+footer .box4 {
+  margin-top: 50px;
+  margin-left: 200px;
+  display: flex;
+}
+.box4 svg {
+  width: 50px;
+  margin-top: 0;
+  margin-left: 10px;
+  background-color: #222327;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+h4 {
+  margin-bottom: 20px;
+  color: #919496;
+  font-size: 12px;
+}
+.bottombox {
+  display: flex;
+}
+.bottombox ul li a {
+  color: #919496;
+  font-size: 12px;
+}
+.bottombox ul li {
+  margin: 20px;
+  float: left;
+}
+.container1 a:hover {
+  color: rgb(30, 215, 96);
+}
+.container2 a {
+  color: #919496;
+  font-size: 12px;
+}
+.ZONE{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 9px;
+}
+
+.container2 p {
+  color: #919496;
+  font-size: 12px;
+  margin: 10px;
+}
+.container2 {
+  margin-left: 550px;
+}
+a:hover {
+  color: rgb(30, 215, 96);
+}
+svg:hover path {
+  fill: rgb(30, 215, 96);
+}
+
+/* style for main */
+
+.creator {
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  width: 100%;
+  font-family: "poppins";
+  font-size: 14px;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+.creator .containerA {
+  width: 60%;
+}
+.creator .containerB {
+  width: 40%;
+  margin-left: 50px;
+  margin-top: 80px;
+}
+.parent1 {
+  display: flex;
+}
+.parent2 {
+  display: flex;
+}
+.parent3 {
+  display: flex;
+}
+.parent4 {
+  display: flex;
+}
+.parent5 {
+  display: flex;
+}
+.parent6 {
+  display: flex;
+}
+.parent7 {
+  display: flex;
+}
+.sub2 {
+  width: 100%;
+  margin-left: 30px;
+}
+.sub1 {
+  width: 100%;
+}
+.creator a {
+  color: rgb(30, 215, 96);
+}
+.aboutus h1,
+.world h1 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+}
+.hq .heading {
+  padding-bottom: 20px;
+}
+.service h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.creator li {
+  list-style-position: inside;
+}
+.service li {
+  margin-top: 4px;
+}
+
+.creator h3 {
+  margin-bottom: 7px;
+}
+.containerB p {
+  line-height: 1.6;
+}
+.aboutus p {
+  margin-top: 15px;
+}
+.pick p {
+  margin-top: 12px;
+}
+.aboutus h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.service h1,
+.pick h1,
+.hq h2,
+.world h1 {
+  font-size: 30px;
+  font-weight: 900;
+}

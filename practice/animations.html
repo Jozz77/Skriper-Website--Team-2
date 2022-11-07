@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animations.css">
+    <script
+    src="https://kit.fontawesome.com/2bfe15d79d.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Shoe card</title>
+</head>
+<body>
+    <header id="menu">
+        <div class="navbar">
+          <ul class="ul">
+            <li class="portfolio"><a href="./HTML/hero.html">service portfolio</a></li>
+            <li class="office"><a href="#">our office</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">faqs</a></li>
+            <li><a href="#">about us</a></li>
+          </ul>
+        </div>
+      </header>
+      <button class="open hamburger" id="menu-btn">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    
+
+    <!-- ANIMATED PRODUCT CARD FOR NIKE -->
+    <div class="card">
+        <div class="card-img">
+            <img src="./images-removebg-preview.png" alt="nike air" height="10px">
+            <h3>Fashhion Nike wearable</h3>
+        </div>
+        <div class="card-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est officiis natus doloremque.
+        </div>
+    </div>
+
+
+    <!-- ANIMATED DROPDOWN MENU -->
+    <div class="menu">
+        Profile
+        <ul class="dropdown">
+            <li>contact</li>
+            <li>message</li>
+            <li>documents</li>
+            <li>mails</li>
+            <li>resources</li>
+        </ul>
+    </div>
+
+    <!-- GLASS EFFECT -->
+    <div class="glass">
+        <h3>LOREM</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, veniam!</p>
+    </div>
+
+<!-- html for spinner -->
+    <div class="spinner"></div>
+    
+    <!-- button recipe -->
+    <button class="button">
+        Get started
+    </button>
+    <button class="button-2">
+        Get started
+    </button>
+    <button class="button-3">
+        Get started
+    </button>
+    <button class="button-4">
+       <span class="content">Get started</span>
+    </button>
+
+    <!-- loader -->
+    <div class="loader">
+     <div class="load"></div>
+     <div class="load"></div>
+     <div class="load"></div>
+    </div>
+<script>
+    const btn = document.getElementById('menu-btn')
+const nav = document.getElementById('menu')
+
+btn.addEventListener('click', () =>{
+  btn.classList.toggle('open')
+  nav.classList.toggle('navbar')
+nav.classList.toggle('none')
+})
+
+</script>
+</body>
+</html>

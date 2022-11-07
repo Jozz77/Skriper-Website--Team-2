@@ -29,6 +29,9 @@ a:hover{
     color: white;
     transition: ease-in-out 500ms;
 }
+a:visited{
+  color: #588c7e;
+}
 h3{
     text-align: center;
     margin-bottom: 100px;

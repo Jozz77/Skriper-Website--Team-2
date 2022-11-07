@@ -4,20 +4,23 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(218, 211, 211);
+  /* background-color: rgb(218, 211, 211); */
   font-size: 16px;
+  min-height: 100vh;
+  background: url("bg-intro-desktop.png") no-repeat center;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .parent {
-  background-image: url(bg-intro-desktop.png);
   width: 80%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
   margin-top: 60px;
-
-  background-color: hsl(0, 100%, 74%);
   background-blend-mode: overlay;
 }
 .container-1 {
@@ -30,14 +33,13 @@ body {
 
 h2 {
   margin-bottom: 20px;
-  /* text-align: justify; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   display: block;
   font-size: 40px;
 }
 #container1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -76,9 +78,9 @@ section {
   border: 1px solid rgb(245, 235, 235);
   border-radius: 5px;
 }
-input:focus{
+input:focus {
   outline: 0;
-  border:1px solid rgb(93, 84, 163);
+  border: 1px solid rgb(93, 84, 163);
 }
 button {
   width: 100%;
@@ -100,13 +102,22 @@ a {
   text-decoration: none;
   color: hsl(0, 100%, 74%);
 }
-
-/* 
-input:invalid{
-  border-color: hsl(0, 100%, 74%);
-  background-image: url("icon-error.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size:20px ;
-  background-position-x: 95%;
-} */
+@media screen and (max-width: 422px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+  .container-1 {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .container-2 {
+    width: 100%;
+    padding-right: 0;
+  }
+}

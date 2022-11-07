@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button:hover{
+  transform: scale(1.1);
+}
+
+/* style for nav bar */
+.topheader {
+  background-color: black;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.spotifylogo {
+  width: 150px;
+  margin: 10px 30px;
+}
+.navleft{
+  animation: slideIn 750ms linear forwards;
+}
+@keyframes slideIn{
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.navleft ul li {
+  list-style-type: none;
+  font-size: 15px;
+  margin: 20px 25px;
+  float: left;
+  color: white;
+}
+.topheader a {
+  text-decoration: none;
+  color: white;
+  font-family: "poppins";
+}
+a:hover {
+  color: rgb(30, 215, 96);
+}
+
+/* style for footer */
+footer {
+  background-color: black;
+
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+.footdiv {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+footer ul li {
+  list-style-type: none;
+  padding-bottom: 25px;
+  line-height: 1.4;
+}
+footer .box1,
+footer .box2,
+footer .box3 {
+  margin: 50px;
+}
+.box0 {
+  margin: 30px;
+}
+footer .box4 {
+  margin-top: 50px;
+  margin-left: 200px;
+  display: flex;
+}
+.box4 svg {
+  width: 50px;
+  margin-top: 0;
+  margin-left: 10px;
+  background-color: #222327;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+h4 {
+  margin-bottom: 20px;
+  color: #919496;
+  font-size: 12px;
+}
+.bottombox {
+  display: flex;
+}
+.bottombox ul li a {
+  color: #919496;
+  font-size: 12px;
+}
+.bottombox ul li {
+  margin: 20px;
+  float: left;
+}
+.container1 a:hover {
+  color: rgb(30, 215, 96);
+}
+.container2 a {
+  color: #919496;
+  font-size: 12px;
+}
+.ZONE{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 9px;
+}
+.container2 p {
+  color: #919496;
+  font-size: 12px;
+  margin: 10px;
+}
+.container2 {
+  margin-left: 550px;
+}
+a:hover {
+  color: rgb(30, 215, 96);
+}
+svg:hover path {
+  fill: rgb(30, 215, 96);
+}
+
+/* premium page code */
+.content header {
+  background-color: rgb(29, 118, 222);
+  padding-top: 4rem;
+  width: 100%;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+}
+.content h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.content header .para1 {
+  color: white;
+  font-size: 25px;
+}
+.buttons {
+  display: flex;
+  margin: 40px 0;
+}
+.button1 button {
+  padding: 18px 25px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 27px;
+  cursor: pointer;
+}
+.button2 button {
+  padding: 15px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.content .undertext a {
+  color: white;
+}
+.content .undertext {
+  color: white;
+  font-size: 12px;
+}
+.whygopremium {
+  margin: 100px 0;
+}
+.whygopremium h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+.premiumimg {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.premiumimg h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+.premiumimg p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pickpremium {
+  background-color: rgb(239, 239, 239);
+  padding: 100px 80px;
+}
+
+.pickpremium h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.pickpremium .para {
+  text-align: center;
+  font-size: 15x;
+  margin-bottom: 30px;
+}
+.premiumboxes {
+  display: flex;
+  justify-content: space-around;
+  height: 90vh;
+  width: 100%;
+}
+
+.premiumboxes .box1,
+.premiumboxes .box2,
+.premiumboxes .box3,
+.premiumboxes .box4 {
+  border: 1px solid white;
+  background-color: white;
+  margin-left: 10px;
+  height: 90vh;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px grey;
+  width: 100%;
+}
+
+.premiumboxes li {
+  margin-top: 10px;
+  font-size: 17px;
+  list-style-image: url(../IMAGE/premium-bottom-arrow.svg);
+}
+
+.premiumboxes ul {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.pickpremium .box1 .para1,
+.box4 .para1 {
+  border: 1px solid rgb(45, 119, 208);
+  background-color: rgb(45, 119, 208);
+  color: white;
+  width: 90%;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.pickpremium .box1 .para2,
+.box4 .para2 {
+  border: 1px solid rgb(45, 119, 208);
+  background-color: white;
+  color: rgb(45, 119, 208);
+  width: 80%;
+  padding: 4px;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.premiumboxes h3 {
+  padding-top: 7px;
+  font-size: 25px;
+}
+
+.premiumboxes .para3 {
+  padding-top: 7px;
+  font-size: 18px;
+}
+
+.premiumboxes .box1 .para3,
+.box4 .para3 {
+  padding-bottom: 17px;
+}
+
+.pickpremium button {
+  margin-top: auto;
+  color: white;
+  width: 100%;
+  background-color: black;
+  border:none;
+  border-radius: 25px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+
+.box1body,.box2body,.box3body,.box4body{
+    height: 60vh;
+}
+.btn{
+    margin-top: auto;
+}
+
+
+.premiumboxes a,
+.premiumboxes .para4 {
+  color: rgb(107, 104, 104);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.premiumboxes .box2 .para1,
+.box3 .para1 {
+  color: white;
+  border: 2px solid rgb(45, 119, 208);
+  background-color: rgb(45, 119, 208);
+  width: 60%;
+  padding: 0 3px;
+  border-radius: 4px;
+}
+
+.premiumboxes .box2 .para3,
+.box3 .para3 {
+  margin-bottom: 58px;
+}
+
+

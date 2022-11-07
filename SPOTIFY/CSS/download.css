@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  button:hover{
+    transform: scale(1.1);
+  }
+  
+  /* style for nav bar */
+  .topheader {
+    background-color: black;
+  }
+  .navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .spotifylogo {
+    width: 150px;
+    margin: 10px 30px;
+  }
+  .navleft{
+    animation: slideIn 750ms linear forwards;
+  }
+  @keyframes slideIn{
+    0%{
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    75%{
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  .navleft ul li {
+    list-style-type: none;
+    font-size: 15px;
+    margin: 20px 25px;
+    float: left;
+    color: white;
+  }
+  .topheader a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: rgb(30, 215, 96);
+  }
+  
+  /* style for footer */
+  footer {
+    background-color: black;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  .footdiv {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
+  footer ul li {
+    list-style-type: none;
+    padding-bottom: 25px;
+    line-height: 1.4;
+  }
+  footer .box1,
+  footer .box2,
+  footer .box3 {
+    margin: 50px;
+  }
+  .box0 {
+    margin: 30px;
+  }
+  footer .box4 {
+    margin-top: 50px;
+    margin-left: 200px;
+    display: flex;
+  }
+  .box4 svg {
+    width: 50px;
+    margin-top: 0;
+    margin-left: 10px;
+    background-color: #222327;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  h4 {
+    margin-bottom: 20px;
+    color: #919496;
+    font-size: 12px;
+  }
+  .bottombox {
+    display: flex;
+  }
+  .bottombox ul li a {
+    color: #919496;
+    font-size: 12px;
+  }
+  .bottombox ul li {
+    margin: 20px;
+    float: left;
+  }
+  .container1 a:hover {
+    color: rgb(30, 215, 96);
+  }
+  .container2 a {
+    color: #919496;
+    font-size: 12px;
+  }
+
+  .container2 p {
+    color: #919496;
+    font-size: 12px;
+    margin: 10px;
+  }
+  .container2 {
+    margin-left: 550px;
+  }
+  a:hover {
+    color: rgb(30, 215, 96);
+  }
+  svg:hover path {
+    fill: rgb(30, 215, 96);
+  }
+  .ZONE{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 9px;
+  }
+  /* style for main content */
+  body{
+      font-family: 'poppins';
+  }
+  .hero{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      background-color: rgb(25, 230, 140);
+      padding: 3em 0;
+  }
+  .hero h1{
+      text-transform: capitalize;
+      font-size: 3em;
+  }
+  .hero button{
+      background-color: white;
+      border: none;
+      border-radius: 3em;
+      padding: .9em 2em;
+      font-size: 18px;
+      cursor: pointer;
+  }
+  .hero button:hover{
+      transform: scale(1.1);
+      background-color: #e8e9eb;
+  }
+  .hero-img{
+      position: relative;
+  }
+  .hero-img::after{
+      content: url(../IMAGE/green-circle.svg);
+      position: absolute;
+      bottom: 38%;
+      right: 34%;
+  }
+  .hero-img::before{
+    content: url(../IMAGE/green-success-check.svg);
+    position: absolute;
+    bottom: 46%;
+    right: 45%;
+    animation: check 500ms ease;
+}
+@keyframes check{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    75%{
+        opacity: .8;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.devices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 4em 0;
+}
+.devices h1{
+    font-size: xx-large;
+}
+.devices .imgs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.everywhere{
+  background-color: rgb(34, 35, 38);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 4em 0;
+}
+.everywhere ul{
+  display: flex;
+  gap: 30px;
+}
+.everywhere ul li{
+  text-transform: uppercase;
+  color: rgb(25, 230, 140);
+  cursor: pointer;
+}
+.everywhere ul li:nth-child(1){
+list-style-type: none;
+}
+.everywhere img{
+  width: 550px;
+  display: flex;
+  justify-content: center;
+}
+.everywhere #white{
+  color: white;
+  cursor: auto;
+}
